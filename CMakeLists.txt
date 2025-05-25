@@ -10,7 +10,7 @@ set(SFML_ROOT "C:/SFML/SFML-3.0.0")
 file(GLOB SRC_FILES src/*.cpp)
 
 # Создание исполняемого файла
-add_executable(CourseworkSFML ${SRC_FILES})
+add_executable(CourseworkSFML ${SRC_FILES} "src/theme.cpp")
 
 # Установка include и lib путей вручную
 target_include_directories(CourseworkSFML PRIVATE ${SFML_ROOT}/include)

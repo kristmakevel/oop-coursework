@@ -7,11 +7,11 @@ void Game::DifficultyMenu() {
     // получаем границы в координатах (x, y, длина, высота)
     sf::FloatRect titleBounds = difficultyTitleText.getLocalBounds();
     difficultyTitleText.setOrigin(titleBounds.getCenter()); // привязка
-    difficultyTitleText.setPosition({ 400.f, 200.f }); // устанавливаем позицию текста
+    difficultyTitleText.setPosition({ 400.f, 100.f }); // устанавливаем позицию текста
 
     // кнопка easy
     easyButton.setSize({ 200, 60 });
-    easyButton.setFillColor(sf::Color(210, 170, 230));
+    easyButton.setFillColor(sf::Color(160, 120, 220));  // темнее фона
     easyButton.setPosition({ 300.f, 310.f });
 
     // текст easy
@@ -23,7 +23,7 @@ void Game::DifficultyMenu() {
 
     // кнопка medium
     mediumButton.setSize({ 200, 60 });
-    mediumButton.setFillColor(sf::Color(170, 130, 230));
+    mediumButton.setFillColor(sf::Color(130, 90, 200));
     mediumButton.setPosition({ 300.f, 390.f });
 
     // текст medium
@@ -35,7 +35,7 @@ void Game::DifficultyMenu() {
 
     // кнопка hard
     hardButton.setSize({ 200, 60 });
-    hardButton.setFillColor(sf::Color(130, 90, 210));
+    hardButton.setFillColor(sf::Color(100, 60, 170));
     hardButton.setPosition({ 300.f, 470.f });
 
     // текст hard
@@ -44,4 +44,5 @@ void Game::DifficultyMenu() {
     sf::FloatRect hardTextBounds = hardButtonText.getLocalBounds();
     hardButtonText.setOrigin(hardTextBounds.getCenter());
     hardButtonText.setPosition({ 400.f, 500.f });
+
 }

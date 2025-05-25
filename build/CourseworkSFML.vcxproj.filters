@@ -25,6 +25,9 @@
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\macka\source\repos\coursework\src\theme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\updates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

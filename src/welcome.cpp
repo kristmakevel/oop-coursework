@@ -32,7 +32,7 @@ void Game::WelcomeScreen() {
     }
 
     // вывод guess the word
-    welcomeText.setCharacterSize(60);
+    welcomeText.setCharacterSize(50);
     welcomeText.setFillColor(sf::Color::White);
     welcomeText.setStyle(sf::Text::Bold);
     sf::FloatRect textRect = welcomeText.getLocalBounds();

@@ -336,6 +336,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\processevent.cpp" />
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\randomword.cpp" />
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\render.cpp" />
+    <ClCompile Include="C:\Users\macka\source\repos\coursework\src\theme.cpp" />
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\updates.cpp" />
     <ClCompile Include="C:\Users\macka\source\repos\coursework\src\welcome.cpp" />
   </ItemGroup>

@@ -19,6 +19,11 @@ Game::Game()
     endingGameText(font, "the game is over:( i'm sorry"),
     correctWordText(font, ""),
     restartText(font, "RESTART"),
+    animalText(font, "animals"),
+    randomsText(font, "random"),
+    scienceText(font, "science"),
+    bookText(font, "books"),
+    themeTitleText(font, "choose a theme"),
 
     startButton(),
     easyButton(),
@@ -26,6 +31,10 @@ Game::Game()
     hardButton(),
     hintButton(),
     restartButton(),
+    animalButton(),
+    randomsButton(),
+    scienceButton(),
+    bookButton(),
 
     isGameStarted(false),
     isDifficultyMenuShown(false),

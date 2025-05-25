@@ -42,6 +42,19 @@ void Game::render() {
         window.draw(hardButtonText);
     }
 
+    else if (isThemeMenuShown) {
+        window.draw(lavenderSprite);
+        window.draw(themeTitleText);
+        window.draw(animalButton);
+        window.draw(animalText);
+        window.draw(randomsButton);
+        window.draw(randomsText);
+        window.draw(scienceButton);
+        window.draw(scienceText);
+        window.draw(bookButton);
+        window.draw(bookText);
+    }
+
     // в остальных случаях идет игра
     else {
         window.draw(lavenderSprite);

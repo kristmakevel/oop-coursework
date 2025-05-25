@@ -58,13 +58,13 @@ void Game::loadRandomWord(const std::string& filePath) {
     // кнопка подсказки
     hintButton.setSize({ 200, 60 });
     hintButton.setFillColor(sf::Color(210, 170, 230));
-    hintButton.setPosition({ 450.f, 100.f });
+    hintButton.setPosition({ 450.f, 150.f });
 
     // текст кнопки подсказки
     hintText.setCharacterSize(40);
     hintText.setFillColor(sf::Color::White);
     sf::FloatRect hintTextBounds = hintText.getLocalBounds();
     hintText.setOrigin(hintTextBounds.getCenter());
-    hintText.setPosition({ 550.f, 130.f });
+    hintText.setPosition({ 550.f, 180.f });
 
 }

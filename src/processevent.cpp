@@ -47,15 +47,46 @@ void Game::processEvents() {
             // в зависимости от выбранного уровня загружаем слово из нужного файла
             if (easyButton.getGlobalBounds().contains(pos)) {
                 isDifficultyMenuShown = false;
-                loadRandomWord("words/easy.txt");
+                isThemeMenuShown = true;
+                level = "easy";
+                ThemeMenu();
             }
             else if (mediumButton.getGlobalBounds().contains(pos)) {
+                level = "medium";
                 isDifficultyMenuShown = false;
-                loadRandomWord("words/medium.txt");
+                isThemeMenuShown = true;
+                ThemeMenu();
             }
             else if (hardButton.getGlobalBounds().contains(pos)) {
+                level = "hard";
                 isDifficultyMenuShown = false;
-                loadRandomWord("words/hard.txt");
+                isThemeMenuShown = true;
+                ThemeMenu();
+            }
+        }
+
+        else if (isThemeMenuShown && event->is<sf::Event::MouseButtonPressed>()) {
+            auto mousePos = sf::Mouse::getPosition(window);
+            sf::Vector2f pos = { static_cast<float>(mousePos.x), static_cast<float>(mousePos.y) };
+            if (animalButton.getGlobalBounds().contains(pos)) {
+                std::string path = "words/" + level + "/" + "animal.txt";
+                isThemeMenuShown = false;
+                loadRandomWord(path);
+            }
+            else if (randomsButton.getGlobalBounds().contains(pos)) {
+                std::string path = "words/" + level + "/" + "randoms.txt";
+                isThemeMenuShown = false;
+                loadRandomWord(path);
+            }
+            else if (scienceButton.getGlobalBounds().contains(pos)) {
+                std::string path = "words/" + level + "/" + "science.txt";
+                isThemeMenuShown = false;
+                loadRandomWord(path);
+            }
+            else if (bookButton.getGlobalBounds().contains(pos)) {
+                std::string path = "words/" + level + "/" + "book.txt";
+                isThemeMenuShown = false;
+                loadRandomWord(path);
             }
         }
 

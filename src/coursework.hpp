@@ -17,12 +17,14 @@ private:
     void DifficultyMenu();
     void endingGame();
     void giveHintLetter();
+    void ThemeMenu();
 
     bool isGameStarted;
     bool isDifficultyMenuShown;
     bool isGameOver;
     bool showRestart;
     bool isGameWon;
+    bool isThemeMenuShown;
 
     int lives = 12;
     int hints = 3;
@@ -49,6 +51,11 @@ private:
     sf::Text wrongLettersText;
     sf::Text winText;
     sf::Text correctWordText;
+    sf::Text animalText;
+    sf::Text randomsText;
+    sf::Text scienceText;
+    sf::Text bookText;
+    sf::Text themeTitleText;
 
     sf::RectangleShape startButton;
     sf::RectangleShape restartButton;
@@ -56,8 +63,13 @@ private:
     sf::RectangleShape mediumButton;
     sf::RectangleShape hardButton;
     sf::RectangleShape hintButton;
+    sf::RectangleShape animalButton;
+    sf::RectangleShape randomsButton;
+    sf::RectangleShape scienceButton;
+    sf::RectangleShape bookButton;
 
     std::string currentWord;
     std::string displayWord;
     std::string wrongGuesses;
+    std::string level;
 };
