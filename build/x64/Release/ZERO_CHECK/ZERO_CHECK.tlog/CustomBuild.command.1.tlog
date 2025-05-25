@@ -1,0 +1,10 @@
+^C:\USERS\MACKA\SOURCE\REPOS\COURSEWORK\BUILD\CMAKEFILES\4CB177B375B7819D344D8B1DF3895732\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/macka/source/repos/coursework -BC:/Users/macka/source/repos/coursework/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/macka/source/repos/coursework/build/CourseworkSFML.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

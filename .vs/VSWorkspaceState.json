@@ -1,0 +1,14 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "build",
+      "..\\..\\..\\..\\..\\SFML\\SFML-3.0.0"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\src"
+  ],
+  "SelectedNode": "\\src\\welcome.cpp",
+  "PreviewInSolutionExplorer": false
+}

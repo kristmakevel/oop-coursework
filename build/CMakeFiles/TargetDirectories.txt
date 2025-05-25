@@ -1,0 +1,3 @@
+C:/Users/macka/source/repos/coursework/build/CMakeFiles/CourseworkSFML.dir
+C:/Users/macka/source/repos/coursework/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/macka/source/repos/coursework/build/CMakeFiles/ZERO_CHECK.dir
