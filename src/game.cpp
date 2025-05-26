@@ -42,7 +42,7 @@ Game::Game()
     showRestart(false),
     isGameWon(true),
 
-    lavenderTexture("assets/lavender.png"),
+    lavenderTexture("../assets/lavender.png"),
     lavenderSprite(lavenderTexture)
 {
     WelcomeScreen();

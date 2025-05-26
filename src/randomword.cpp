@@ -53,18 +53,18 @@ void Game::loadRandomWord(const std::string& filePath) {
     wrongLettersText.setCharacterSize(40);
     wrongLettersText.setFillColor(sf::Color::White);
     wrongLettersText.setPosition({ 50.f, 190.f });
-    wrongLettersText.setString("Wrong: ");
+    wrongLettersText.setString("Wrong letters: ");
 
     // кнопка подсказки
     hintButton.setSize({ 200, 60 });
     hintButton.setFillColor(sf::Color(210, 170, 230));
-    hintButton.setPosition({ 450.f, 150.f });
+    hintButton.setPosition({ 550.f, 150.f });
 
     // текст кнопки подсказки
     hintText.setCharacterSize(40);
     hintText.setFillColor(sf::Color::White);
     sf::FloatRect hintTextBounds = hintText.getLocalBounds();
     hintText.setOrigin(hintTextBounds.getCenter());
-    hintText.setPosition({ 550.f, 180.f });
+    hintText.setPosition({ 650.f, 180.f });
 
 }

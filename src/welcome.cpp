@@ -5,7 +5,7 @@
 void Game::WelcomeScreen() {
     // возможные пути, где лежит шрифт
     const std::vector<std::string> fontPaths = {
-        "assets/fonts/arial.ttf",
+        "../assets/fonts/arial.ttf",
         "C:/Windows/Fonts/arial.ttf"
     };
 

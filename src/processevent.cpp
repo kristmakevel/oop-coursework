@@ -24,7 +24,7 @@ void Game::processEvents() {
                 lives = 12;
                 hints = 3;
                 wordDisplayText.setString("");
-                wrongLettersText.setString("Wrong: ");
+                wrongLettersText.setString("Wrong letters: ");
                 livesText.setString("Lives: 12");
                 showRestart = false;
             }
@@ -69,22 +69,22 @@ void Game::processEvents() {
             auto mousePos = sf::Mouse::getPosition(window);
             sf::Vector2f pos = { static_cast<float>(mousePos.x), static_cast<float>(mousePos.y) };
             if (animalButton.getGlobalBounds().contains(pos)) {
-                std::string path = "words/" + level + "/" + "animal.txt";
+                std::string path = "../words/" + level + "/" + "animal.txt";
                 isThemeMenuShown = false;
                 loadRandomWord(path);
             }
             else if (randomsButton.getGlobalBounds().contains(pos)) {
-                std::string path = "words/" + level + "/" + "randoms.txt";
+                std::string path = "../words/" + level + "/" + "randoms.txt";
                 isThemeMenuShown = false;
                 loadRandomWord(path);
             }
             else if (scienceButton.getGlobalBounds().contains(pos)) {
-                std::string path = "words/" + level + "/" + "science.txt";
+                std::string path = "../words/" + level + "/" + "science.txt";
                 isThemeMenuShown = false;
                 loadRandomWord(path);
             }
             else if (bookButton.getGlobalBounds().contains(pos)) {
-                std::string path = "words/" + level + "/" + "book.txt";
+                std::string path = "../words/" + level + "/" + "book.txt";
                 isThemeMenuShown = false;
                 loadRandomWord(path);
             }
@@ -123,7 +123,7 @@ void Game::processEvents() {
 
                     if (!found) { // если не нашлась
                         wrongGuesses += typedChar;
-                        wrongLettersText.setString("Wrong: " + wrongGuesses);
+                        wrongLettersText.setString("Wrong letters: " + wrongGuesses);
                         lives--;
 
                         if (lives == 0) { // если жизни закончились, выводим проигрыш
